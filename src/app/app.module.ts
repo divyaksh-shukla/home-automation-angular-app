@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { DashboarddComponent } from './component/dashboardd/dashboardd.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { PowerUsageComponent } from './component/power-usage/power-usage.component';
+import { ExportDataComponent } from './component/export-data/export-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboarddComponent
+    DashboarddComponent,
+    PowerUsageComponent,
+    ExportDataComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +25,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ChartsModule
   ],
   providers: [],
-  bootstrap: [DashboarddComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
