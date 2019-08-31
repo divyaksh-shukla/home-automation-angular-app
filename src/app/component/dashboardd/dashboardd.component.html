@@ -1,0 +1,22 @@
+<div style="display: grid;">
+    <div style="display: inline-block; grid-row: 1; grid-column: 1" style="width: 400px; height: auto">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+      Temperature
+    </div>
+    <div style="display: inline-block; grid-row: 1; grid-column: 2; width: 400px; height: auto">
+      <canvas baseChart
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [legend]="barChartLegend"
+              [chartType]="barChartType">
+      </canvas>
+      Humidity
+    </div>
+  </div>
